@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './assets/logo.png';
+import { logoBase64 } from './assets/logoBase64';
 import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { 
@@ -95,7 +95,7 @@ const Navbar = () => {
             className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center shadow-lg transition-transform overflow-hidden border border-white/10"
           >
             <img 
-              src={logo} 
+              src={logoBase64} 
               alt="Meena CCTV Logo" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -797,7 +797,7 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center overflow-hidden border border-white/10">
               <img 
-                src={logo} 
+                src={logoBase64} 
                 alt="Meena CCTV Logo" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
